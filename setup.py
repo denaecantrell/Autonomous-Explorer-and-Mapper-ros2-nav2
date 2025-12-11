@@ -21,6 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'explorer = custom_explorer.explorer:main',
+            'frontier_viz = custom_explorer.frontier_visualizer:main',
+            'direction_to_goal = custom_explorer.direction_to_goal:main',
+            'rviz_click_nav = explorer_nav2.custom_explorer.rviz_click_nav:main',
         ],
     },
 )
