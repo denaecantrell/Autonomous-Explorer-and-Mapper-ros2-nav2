@@ -648,7 +648,7 @@ class ExplorerNode(Node):
         frontiers = self.find_frontiers(map_array)
 
         # Filtering frontiers
-        filtered_frontiers = [point for point in frontiers if not self.is_in_obstacle_on_map(point[0], point[1], 10)]
+        filtered_frontiers = [point for point in frontiers if not self.is_in_obstacle_on_map(point[0], point[1], 5)]
         self.publish_markers(filtered_frontiers, self.map_data)
 
         if not frontiers:
